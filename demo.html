@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Simple Color Picker</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="jquery.simplecolorpicker.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#bg_color').SimpleColorPicker();
+            });
+        </script>
+        <style type="text/css">
+            .SimpleColorPicker { background-color:white; border:1px dotted #ccc; }
+        </style>
+    </head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Editor</legend>
+            
+            <div style="position:relative;">
+                <label for="template_name">Template name:</label>
+                <input type="text" name="template_name" id="template_name" />            
+            </div>
+            
+            <div style="position:relative;">
+                <label for="border_color">Border color:</label>
+                <input type="text" name="border_color" id="border_color" />
+            </div>
+            
+            <div style="position:relative;">
+                <label for="bg_color">Background color:</label>
+                <input type="text" name="bg_color" id="bg_color" />
+            </div>
+
+            <input type="submit" name="go" value="Go" />
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
